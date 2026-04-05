@@ -1,0 +1,691 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kunal Lamba | AI and Software Engineering Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Kunal Lamba, a B.Tech CSE (AI) student at USICT GGSIPU focused on data structures, AI fundamentals, and web development internships.">
+  <meta name="author" content="Kunal Lamba">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#070d1a">
+  <link rel="canonical" href="https://kunal-lamba.dev/">
+
+  <meta property="og:title" content="Kunal Lamba | AI and Software Engineering Portfolio">
+  <meta property="og:description"
+    content="B.Tech CSE (AI) student building strong fundamentals in DSA, AI, and software development.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kunal-lamba.dev/">
+  <meta property="og:image" content="https://kunal-lamba.dev/profile.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kunal Lamba | AI and Software Engineering Portfolio">
+  <meta name="twitter:description" content="B.Tech CSE (AI) student focused on DSA, AI, and software internships.">
+  <meta name="twitter:image" content="https://kunal-lamba.dev/profile.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kunal Lamba",
+    "url": "https://kunal-lamba.dev",
+    "email": "kunallamba47@gmail.com",
+    "jobTitle": "B.Tech CSE (AI) Student",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "USICT, GGSIPU"
+    },
+    "knowsAbout": [
+      "C++",
+      "Python",
+      "Data Structures and Algorithms",
+      "Machine Learning Fundamentals",
+      "Web Development"
+    ],
+    "sameAs": [
+      "https://github.com/kunal4116452224",
+      "https://www.linkedin.com/in/kunal-lamba-635216388/"
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="./profile.jpg" type="image/jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div id="loader" class="loader" role="status" aria-live="polite" aria-label="Loading portfolio">
+    <div class="loader-inner">
+      <div class="loader-ring" aria-hidden="true"></div>
+      <span class="loader-text">Loading</span>
+    </div>
+  </div>
+
+  <div id="progress-bar" aria-hidden="true"></div>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="bg-gradient-mesh" aria-hidden="true"></div>
+  <div class="bg-grid-pattern" aria-hidden="true"></div>
+  <div class="bg-floating-dots" aria-hidden="true"></div>
+
+  <div id="nav-overlay" class="nav-overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo" aria-label="Kunal Lamba homepage">KL<span aria-hidden="true">.</span></a>
+
+      <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-label="Toggle navigation menu"
+        aria-expanded="false" aria-controls="navbar">
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+
+      <nav id="navbar" class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#home" aria-current="page">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-controls">
+          <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle color theme" aria-pressed="false"
+            title="Toggle color theme">
+            <span id="theme-icon" aria-hidden="true">Moon</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section id="home" class="section hero" aria-labelledby="home-title">
+      <div class="hero-gradient-bg" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="hero-eyebrow reveal">
+            <span aria-hidden="true">&#x1F393;</span>
+            <span>Available for internships</span>
+          </p>
+
+          <h1 id="home-title" class="hero-title reveal">Hi, I&apos;m <span class="highlight">Kunal Lamba</span></h1>
+          <p class="hero-subtitle reveal" id="typing-text" aria-live="polite"></p>
+
+          <p class="hero-desc reveal">
+            Second-year B.Tech CSE (AI) student at USICT GGSIPU, building strong fundamentals in DSA, AI,
+            and software development with a focus on becoming an industry-ready engineer.
+          </p>
+
+          <div class="hero-buttons reveal">
+            <a href="./resume.pdf" target="_blank" rel="noopener" class="btn btn-primary">View Resume</a>
+            <a href="./resume.pdf" download class="btn btn-outline" id="resumeBtn">Download (<span
+                id="resumeCount">0</span>)</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <aside class="hero-card floating glowing-border reveal" aria-label="Profile card">
+          <img src="./profile.jpg" alt="Portrait of Kunal Lamba" width="160" height="178" loading="eager"
+            fetchpriority="high" decoding="async">
+          <h2 class="hero-card-name">Kunal Lamba</h2>
+          <p class="hero-card-role">AI and Software Developer</p>
+          <div class="badge-row">
+            <span class="status-badge">Open to Work</span>
+            <span class="tag">Delhi, IN</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="about-title">About Me</h2>
+          <p>A brief introduction to who I am and what I am building toward.</p>
+        </div>
+
+        <div class="container--narrow">
+          <p class="about-summary reveal text-center">
+            I am a second-year B.Tech CSE (AI) student at USICT, GGSIPU, focused on building strong
+            fundamentals in Data Structures, Algorithms, and Artificial Intelligence. I practice coding regularly
+            and work on practical projects to strengthen my problem-solving and development skills.
+          </p>
+
+          <article class="education-block reveal mt-xl">
+            <h3>Education</h3>
+            <p class="education-title">B.Tech - Computer Science (AI)</p>
+            <p>USICT, GGSIPU | 2024 - 2028 | 2nd Year (Ongoing)</p>
+          </article>
+
+          <div class="mt-2xl reveal">
+            <h3 class="text-center mb-lg label-title">Currently Learning</h3>
+            <div class="learning-grid stagger-children">
+              <article class="learning-card">
+                <span class="icon" aria-hidden="true">&#x1F333;</span>
+                <p>Advanced Data Structures - Trees, Graphs, DP</p>
+              </article>
+              <article class="learning-card">
+                <span class="icon" aria-hidden="true">&#x1F916;</span>
+                <p>Machine Learning Model Optimization</p>
+              </article>
+              <article class="learning-card">
+                <span class="icon" aria-hidden="true">&#9881;</span>
+                <p>Backend Development with REST APIs</p>
+              </article>
+              <article class="learning-card">
+                <span class="icon" aria-hidden="true">&#x1F4D0;</span>
+                <p>System Design Fundamentals</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="strengths" class="section" aria-labelledby="strengths-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="strengths-title">Key Strengths</h2>
+        </div>
+
+        <div class="strength-grid stagger-children">
+          <article class="strength-card">
+            <span class="strength-icon" aria-hidden="true">&#x1F9E0;</span>
+            <h3>Strong Fundamentals</h3>
+            <p>C++, Python, DSA, OOP concepts</p>
+          </article>
+          <article class="strength-card">
+            <span class="strength-icon" aria-hidden="true">&#9889;</span>
+            <h3>Quick Learner</h3>
+            <p>Adapts quickly to new tools and technologies</p>
+          </article>
+          <article class="strength-card">
+            <span class="strength-icon" aria-hidden="true">&#x1F50D;</span>
+            <h3>Problem Solving</h3>
+            <p>Logical and analytical approach to challenges</p>
+          </article>
+          <article class="strength-card">
+            <span class="strength-icon" aria-hidden="true">&#x1F91D;</span>
+            <h3>Communication</h3>
+            <p>Clear communication in team and individual work</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="objective" class="section" aria-labelledby="objective-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="objective-title">Career Objective</h2>
+        </div>
+        <p class="objective-text reveal container--narrow text-center">
+          To secure an internship where I can apply my knowledge of Data Structures, Artificial Intelligence,
+          and software development in real-world projects while learning from industry professionals.
+        </p>
+      </div>
+    </section>
+
+    <section id="timeline" class="section" aria-labelledby="timeline-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="timeline-title">Experience Timeline</h2>
+          <p>My education, learning journey, and career milestones.</p>
+        </div>
+
+        <div class="feature-timeline reveal">
+          <ol class="feature-timeline__items">
+            <li class="feature-timeline__item">
+              <article class="feature-timeline__content">
+                <span class="feature-timeline__icon" aria-hidden="true">&#x1F393;</span>
+                <h3 class="feature-timeline__title">B.Tech CSE (AI)</h3>
+                <p class="feature-timeline__year">2024 - 2028</p>
+                <p class="feature-timeline__description">
+                  Second-year student at USICT, GGSIPU, focused on Data Structures, Algorithms, and AI through
+                  coursework and practical projects.
+                </p>
+              </article>
+            </li>
+            <li class="feature-timeline__item">
+              <article class="feature-timeline__content">
+                <span class="feature-timeline__icon" aria-hidden="true">&#x1F4BB;</span>
+                <h3 class="feature-timeline__title">Learning Path: DSA and Problem Solving</h3>
+                <p class="feature-timeline__year">2024 - Present</p>
+                <p class="feature-timeline__description">
+                  Regular DSA practice on coding platforms with a focus on problem-solving depth and core concepts.
+                </p>
+              </article>
+            </li>
+            <li class="feature-timeline__item">
+              <article class="feature-timeline__content">
+                <span class="feature-timeline__icon" aria-hidden="true">&#x1F916;</span>
+                <h3 class="feature-timeline__title">AI and Machine Learning Fundamentals</h3>
+                <p class="feature-timeline__year">2023 - Present</p>
+                <p class="feature-timeline__description">
+                  Exploring ML algorithms and building practical projects including an AI recommendation system.
+                </p>
+              </article>
+            </li>
+            <li class="feature-timeline__item">
+              <article class="feature-timeline__content">
+                <span class="feature-timeline__icon" aria-hidden="true">&#x1F310;</span>
+                <h3 class="feature-timeline__title">Web Development and Full-Stack Learning</h3>
+                <p class="feature-timeline__year">2023 - Present</p>
+                <p class="feature-timeline__description">
+                  Building responsive web applications using HTML, CSS, JavaScript, REST APIs, and database basics.
+                </p>
+              </article>
+            </li>
+            <li class="feature-timeline__item">
+              <article class="feature-timeline__content">
+                <span class="feature-timeline__icon" aria-hidden="true">&#x1F3AF;</span>
+                <h3 class="feature-timeline__title">Internship Goal</h3>
+                <p class="feature-timeline__year">2025 - Ongoing</p>
+                <p class="feature-timeline__description">
+                  Seeking software engineering internships to apply DSA, AI, and development skills in real teams.
+                </p>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="skills-title">Technical Skills</h2>
+          <p>Languages, frameworks, and tools I work with regularly.</p>
+        </div>
+
+        <div class="skills-grid stagger-children" role="list" aria-label="Skill proficiency levels">
+          <article class="skill-card" role="listitem">
+            <h3>C / C++ <span>80%</span></h3>
+            <div class="bar-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+              aria-label="C and C++ proficiency 80 percent">
+              <div class="bar-fill" data-level="80"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" role="listitem">
+            <h3>Python <span>75%</span></h3>
+            <div class="bar-track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+              aria-label="Python proficiency 75 percent">
+              <div class="bar-fill" data-level="75"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" role="listitem">
+            <h3>DSA <span>70%</span></h3>
+            <div class="bar-track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+              aria-label="DSA proficiency 70 percent">
+              <div class="bar-fill" data-level="70"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" role="listitem">
+            <h3>Machine Learning <span>65%</span></h3>
+            <div class="bar-track" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+              aria-label="Machine Learning proficiency 65 percent">
+              <div class="bar-fill" data-level="65"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" role="listitem">
+            <h3>Web Development <span>72%</span></h3>
+            <div class="bar-track" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"
+              aria-label="Web Development proficiency 72 percent">
+              <div class="bar-fill" data-level="72"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" role="listitem">
+            <h3>Git and GitHub <span>70%</span></h3>
+            <div class="bar-track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+              aria-label="Git and GitHub proficiency 70 percent">
+              <div class="bar-fill" data-level="70"></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="tech-stack-section reveal">
+          <h3>Tech Stack</h3>
+          <div class="tech-icons" role="list" aria-label="Technology icons">
+            <img src="https://skillicons.dev/icons?i=cpp" alt="C++" title="C++" loading="lazy" width="64" height="64"
+              class="icon-float" role="listitem">
+            <img src="https://skillicons.dev/icons?i=python" alt="Python" title="Python" loading="lazy" width="64"
+              height="64" class="icon-float" role="listitem">
+            <img src="https://skillicons.dev/icons?i=html" alt="HTML5" title="HTML5" loading="lazy" width="64"
+              height="64" class="icon-float" role="listitem">
+            <img src="https://skillicons.dev/icons?i=css" alt="CSS3" title="CSS3" loading="lazy" width="64" height="64"
+              class="icon-float" role="listitem">
+            <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" title="JavaScript" loading="lazy" width="64"
+              height="64" class="icon-float" role="listitem">
+            <img src="https://skillicons.dev/icons?i=git" alt="Git" title="Git" loading="lazy" width="64" height="64"
+              class="icon-float" role="listitem">
+            <img src="https://skillicons.dev/icons?i=github" alt="GitHub" title="GitHub" loading="lazy" width="64"
+              height="64" class="icon-float" role="listitem">
+            <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" title="VS Code" loading="lazy" width="64"
+              height="64" class="icon-float" role="listitem">
+            <img src="https://skillicons.dev/icons?i=mysql" alt="SQL" title="SQL and MySQL" loading="lazy" width="64"
+              height="64" class="icon-float" role="listitem">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill-galaxy" class="section" aria-labelledby="skill-galaxy-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="skill-galaxy-title">Skill Constellation</h2>
+          <p>Interactive visualization of my technical skill areas.</p>
+        </div>
+
+        <div class="feature-skill-galaxy reveal">
+          <canvas id="skill-galaxy-canvas" width="800" height="450" aria-label="Interactive skill nodes"></canvas>
+          <p class="skill-galaxy-info">Hover over nodes to see details. Move your mouse to interact.</p>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="projects-title">Projects</h2>
+          <p>Academic and personal projects that demonstrate my technical skills.</p>
+        </div>
+
+        <div class="feature-carousel reveal" aria-label="Project carousel">
+          <div class="feature-carousel__viewport">
+            <div class="feature-carousel__track" aria-live="polite">
+              <article class="feature-carousel__slide" role="group" aria-roledescription="slide" aria-label="1 of 3">
+                <div>
+                  <h3>AI Recommendation System</h3>
+                  <p>
+                    Designed a recommendation model using collaborative filtering and content-based methods
+                    for personalized suggestions with emphasis on data preprocessing and algorithm optimization.
+                  </p>
+                </div>
+                <div>
+                  <div class="feature-carousel__tags">
+                    <span class="feature-carousel__tag">Python</span>
+                    <span class="feature-carousel__tag">ML</span>
+                    <span class="feature-carousel__tag">Pandas</span>
+                    <span class="feature-carousel__tag">Scikit-learn</span>
+                  </div>
+                  <div class="feature-carousel__links">
+                    <a href="https://github.com/kunal4116452224" target="_blank" rel="noopener"
+                      class="feature-carousel__link">GitHub</a>
+                    <span class="feature-carousel__link demo-disabled" aria-hidden="true">Demo Soon</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="feature-carousel__slide" role="group" aria-roledescription="slide" aria-label="2 of 3"
+                aria-hidden="true">
+                <div>
+                  <h3>Student Management System</h3>
+                  <p>
+                    Built a structured academic record system using Python and SQL with CRUD operations,
+                    grade tracking, and searchable student records.
+                  </p>
+                </div>
+                <div>
+                  <div class="feature-carousel__tags">
+                    <span class="feature-carousel__tag">Python</span>
+                    <span class="feature-carousel__tag">SQL</span>
+                    <span class="feature-carousel__tag">SQLite</span>
+                  </div>
+                  <div class="feature-carousel__links">
+                    <a href="https://github.com/kunal4116452224" target="_blank" rel="noopener"
+                      class="feature-carousel__link">GitHub</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="feature-carousel__slide" role="group" aria-roledescription="slide" aria-label="3 of 3"
+                aria-hidden="true">
+                <div>
+                  <h3>Responsive Portfolio Website</h3>
+                  <p>
+                    Developed a responsive personal portfolio using HTML, CSS, and JavaScript with animations,
+                    dark/light theme support, and EmailJS contact integration.
+                  </p>
+                </div>
+                <div>
+                  <div class="feature-carousel__tags">
+                    <span class="feature-carousel__tag">HTML</span>
+                    <span class="feature-carousel__tag">CSS</span>
+                    <span class="feature-carousel__tag">JavaScript</span>
+                  </div>
+                  <div class="feature-carousel__links">
+                    <a href="https://github.com/kunal4116452224" target="_blank" rel="noopener"
+                      class="feature-carousel__link">GitHub</a>
+                    <a href="#home" class="feature-carousel__link">Live Demo</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="feature-carousel__nav">
+            <button type="button" class="feature-carousel__btn" data-carousel-prev
+              aria-label="Previous project">Previous</button>
+            <div class="feature-carousel__indicators" role="tablist" aria-label="Project slides">
+              <button type="button" class="feature-carousel__indicator is-active" data-carousel-dot="0"
+                aria-label="Go to project 1" aria-current="true"></button>
+              <button type="button" class="feature-carousel__indicator" data-carousel-dot="1"
+                aria-label="Go to project 2"></button>
+              <button type="button" class="feature-carousel__indicator" data-carousel-dot="2"
+                aria-label="Go to project 3"></button>
+            </div>
+            <button type="button" class="feature-carousel__btn" data-carousel-next
+              aria-label="Next project">Next</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="github-stats" class="section" aria-labelledby="github-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="github-title">GitHub Activity</h2>
+        </div>
+        <div class="github-stats-container reveal">
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=kunal4116452224&show_icons=true&theme=dark&hide_border=true&bg_color=0f1f3d&title_color=22d3ee&icon_color=818cf8&text_color=e2e8f0"
+            alt="Kunal's GitHub stats" loading="lazy" decoding="async" width="450" height="195">
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=kunal4116452224&layout=compact&theme=dark&hide_border=true&bg_color=0f1f3d&title_color=22d3ee&text_color=e2e8f0"
+            alt="Kunal's most used languages" loading="lazy" decoding="async" width="300" height="195">
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section" aria-labelledby="certifications-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="certifications-title">Certifications</h2>
+          <p>Courses and credentials completed to strengthen my technical foundation.</p>
+        </div>
+
+        <div class="certifications-grid stagger-children">
+          <article class="cert-card">
+            <h3>Certification Title</h3>
+            <p class="cert-issuer">Issuer Name</p>
+            <p class="cert-date">Month YYYY</p>
+          </article>
+          <article class="cert-card">
+            <h3>Certification Title</h3>
+            <p class="cert-issuer">Issuer Name</p>
+            <p class="cert-date">Month YYYY</p>
+          </article>
+          <article class="cert-card">
+            <h3>Certification Title</h3>
+            <p class="cert-issuer">Issuer Name</p>
+            <p class="cert-date">Month YYYY</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section" aria-labelledby="achievements-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="achievements-title">Achievements</h2>
+          <p>Key milestones and statistics from my learning journey.</p>
+        </div>
+
+        <div class="feature-stats reveal">
+          <article class="feature-stat-card">
+            <span class="feature-stat-card__icon" aria-hidden="true">&#x1F4BB;</span>
+            <p class="feature-stat-card__number" data-value="500" data-suffix="+">0</p>
+            <p class="feature-stat-card__label">DSA Problems Solved</p>
+          </article>
+          <article class="feature-stat-card">
+            <span class="feature-stat-card__icon" aria-hidden="true">&#x1F680;</span>
+            <p class="feature-stat-card__number" data-value="5">0</p>
+            <p class="feature-stat-card__label">Projects Built</p>
+          </article>
+          <article class="feature-stat-card">
+            <span class="feature-stat-card__icon" aria-hidden="true">&#x1F4DA;</span>
+            <p class="feature-stat-card__number" data-value="15">0</p>
+            <p class="feature-stat-card__label">Technologies Learned</p>
+          </article>
+          <article class="feature-stat-card">
+            <span class="feature-stat-card__icon" aria-hidden="true">&#x1F3AF;</span>
+            <p class="feature-stat-card__number" data-value="2" data-suffix="+">0</p>
+            <p class="feature-stat-card__label">Years of Learning</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 id="contact-title">Get In Touch</h2>
+          <p>Open to internships, collaborations, and project opportunities.</p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="reveal">
+            <form id="contact-form" novalidate aria-label="Contact form">
+              <div class="form-group">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="Your full name" required
+                  autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" placeholder="your@email.com" required
+                  autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message"
+                  placeholder="Tell me about an opportunity, project, or question..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-full">Send Message</button>
+              <p id="form-feedback" class="form-feedback" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <aside class="contact-info-panel reveal from-right" aria-label="Contact details">
+            <article class="contact-item">
+              <span class="icon" aria-hidden="true">&#x1F4E7;</span>
+              <div class="info">
+                <h3>Email</h3>
+                <a href="mailto:kunallamba47@gmail.com">kunallamba47@gmail.com</a>
+              </div>
+            </article>
+
+            <article class="contact-item">
+              <span class="icon" aria-hidden="true">&#x1F4CD;</span>
+              <div class="info">
+                <h3>Location</h3>
+                <p>Mundka, Delhi, India</p>
+              </div>
+            </article>
+
+            <article class="contact-item">
+              <span class="icon" aria-hidden="true">&#x1F393;</span>
+              <div class="info">
+                <h3>University</h3>
+                <p>USICT, GGSIPU</p>
+              </div>
+            </article>
+
+            <div class="socials">
+              <a href="https://github.com/kunal4116452224" target="_blank" rel="noopener" class="social-btn">GitHub</a>
+              <a href="https://www.linkedin.com/in/kunal-lamba-635216388/" target="_blank" rel="noopener"
+                class="social-btn">LinkedIn</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="text-muted">&copy; 2026 Kunal Lamba. Built with HTML, CSS, and JavaScript.</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <a href="#contact" id="floating-contact" class="floating-btn" aria-label="Jump to contact section" title="Contact Me">
+    <span aria-hidden="true">&#x2709;</span>
+  </a>
+
+  <button id="scrollTopBtn" class="floating-btn" type="button" aria-label="Scroll back to top" title="Back to top">
+    <span aria-hidden="true">Top</span>
+  </button>
+
+  <button id="chatbot-btn" class="floating-btn" type="button" aria-label="Open portfolio assistant"
+    aria-expanded="false" title="Ask about my profile">
+    <span aria-hidden="true">AI</span>
+  </button>
+
+  <section id="chatbot-box" role="dialog" aria-label="Kunal's portfolio assistant" aria-modal="false"
+    aria-hidden="true">
+    <header id="chatbot-header">
+      <div class="chatbot-title">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Kunal&apos;s Assistant</span>
+      </div>
+      <button id="chatbot-close" type="button" aria-label="Close chatbot">Close</button>
+    </header>
+
+    <div id="chatbot-messages" aria-live="polite" aria-label="Chat conversation"></div>
+
+    <div id="chatbot-input-area">
+      <input type="text" id="chatbot-text" placeholder="Ask about skills, projects, education..."
+        aria-label="Type your message" autocomplete="off">
+      <button id="chatbot-send" type="button" aria-label="Send message">Send</button>
+    </div>
+  </section>
+</body>
+
+</html>
